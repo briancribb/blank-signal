@@ -1,0 +1,26 @@
+// Bootstrap style overrides
+//
+// These are styles which override the Bootstrap default framework.
+// For example, changing the padding for containers.
+
+.container {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+input {
+	max-width:100%;
+}
+
+/*
+.navbar-toggler-right {
+  position: absolute;
+  right: 1rem;
+}
+
+
+.navbar-toggler-left {
+  position: absolute;
+  left: 1rem;
+}
+*/

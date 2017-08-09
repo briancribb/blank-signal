@@ -1,0 +1,18 @@
+html, body {
+	position:relative;
+}
+/*
+img[width],
+img[height] {
+	max-width: 100%;
+	height:auto;
+}
+*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
