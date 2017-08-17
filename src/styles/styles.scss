@@ -8,53 +8,40 @@
 // Custom variable overrides for vendor frameworks
 @import "custom";
 
-// Core variables and mixins
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/variables";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/mixins";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/custom";
-
-// Reset and dependencies
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/normalize";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/print";
-
-// Core CSS
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/reboot";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/type";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/images";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/code";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/grid";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/tables";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/forms";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/buttons";
-
-// Components
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/transitions";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/dropdown";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/button-group";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/input-group";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/custom-forms";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/nav";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/navbar";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/card";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/breadcrumb";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/pagination";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/badge";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/jumbotron";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/alert";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/progress";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/media";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/list-group";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/responsive-embed";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/close";
-
-// Components w/ JavaScript
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/modal";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/tooltip";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/popover";
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/carousel";
-
-// Utility classes
-@import "../../vendor/bootstrap-4.0.0-alpha.6/scss/utilities";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/functions";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/variables";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/mixins";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/print";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/reboot";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/type";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/images";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/code";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/grid";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/tables";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/forms";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/buttons";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/transitions";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/dropdown";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/button-group";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/input-group";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/custom-forms";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/nav";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/navbar";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/card";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/breadcrumb";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/pagination";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/badge";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/jumbotron";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/alert";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/progress";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/media";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/list-group";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/close";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/modal";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/tooltip";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/popover";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/carousel";
+@import "../../vendor/bootstrap-4.0.0-beta/scss/utilities";
 
 
 /*!
