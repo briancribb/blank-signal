@@ -108,6 +108,7 @@
 			APP.resizeTasks.push(task);
 		},
 		manageResize : function() {
+			console.log('manageResize()');
 			/* Cycle through resize tasks. */
 			for (var i = 0; i < APP.resizeTasks.length; i++) {
 				var task = APP.resizeTasks[i];
@@ -117,4 +118,4 @@
 	}
 	return APP;
 })();
-SITE.init();
+$( document ).ready( SITE.init );

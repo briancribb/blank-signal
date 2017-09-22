@@ -45,26 +45,6 @@
 
 
 /*!
- * Font Awesome styles. Variables for this can be overriden in the "custom" partial above.
- */
-@import "../../vendor/font-awesome-4.7.0/scss/variables";
-@import "../../vendor/font-awesome-4.7.0/scss/mixins";
-@import "../../vendor/font-awesome-4.7.0/scss/path";
-@import "../../vendor/font-awesome-4.7.0/scss/core";
-@import "../../vendor/font-awesome-4.7.0/scss/larger";
-@import "../../vendor/font-awesome-4.7.0/scss/fixed-width";
-@import "../../vendor/font-awesome-4.7.0/scss/list";
-@import "../../vendor/font-awesome-4.7.0/scss/bordered-pulled";
-@import "../../vendor/font-awesome-4.7.0/scss/animated";
-@import "../../vendor/font-awesome-4.7.0/scss/rotated-flipped";
-@import "../../vendor/font-awesome-4.7.0/scss/stacked";
-@import "../../vendor/font-awesome-4.7.0/scss/icons";
-@import "../../vendor/font-awesome-4.7.0/scss/screen-reader";
-
-
-
-
-/*!
  * And now our local stuff:
  */
 @import "_partials/overrides";
