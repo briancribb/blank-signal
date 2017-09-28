@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('signal App', () => {
+describe('ng-signal App', () => {
   let page: AppPage;
 
   beforeEach(() => {

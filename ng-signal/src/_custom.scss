@@ -1,0 +1,22 @@
+// Bootstrap variable overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+// NOTE: Only altered variables will be copied to this file.
+
+
+
+// FONTS
+// ==================================================
+
+
+
+
+// == OTHER CUSTOM VARIABLES === //
+// ========================================== //
+$font-family-sans-serif		: "Poppins", "Helvetica Neue", Arial, sans-serif ;
+$font-family-serif			: "Karma", "Garamond", Times, serif ;
+$font-family-monospace		: "Courier New", monospace ;
+
+$font-family-base			: $font-family-sans-serif ;
+$headings-font-family		: $font-family-serif ;

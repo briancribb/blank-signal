@@ -108,7 +108,7 @@
 			APP.resizeTasks.push(task);
 		},
 		manageResize : function() {
-			console.log('manageResize()');
+			//console.log('manageResize()');
 			/* Cycle through resize tasks. */
 			for (var i = 0; i < APP.resizeTasks.length; i++) {
 				var task = APP.resizeTasks[i];
