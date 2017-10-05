@@ -24,6 +24,10 @@
 			<div class="content pt-3">
 				<div class="container">
 					<p class="lead">This is a lead paragraph.</p>
+
+					<hr>
+					<div id="dynabutton"></div>
+					<hr>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula tincidunt cursus. Donec ut tincidunt ligula. Proin non massa vehicula, suscipit tortor in, rhoncus metus. Vivamus condimentum diam ac diam faucibus, at suscipit odio posuere. Pellentesque et gravida quam.</p>
 <pre>
 This is a bit of monospaced text.
@@ -43,7 +47,7 @@ This is a bit of monospaced text.
 						</ul>
 						</div>
 					</div>
-					<div class="card border-info mb-3">
+					<div class="card border-info mb-3">	
 						<h4 class="card-header bg-info"><i class="fa fa-superpowers mr-3" aria-hidden="true"></i>Some Hero</h4>
 						<div class="card-body">
 							<h4 class="card-title">Special title treatment</h4>
@@ -75,6 +79,18 @@ This is a bit of monospaced text.
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 	<script src="vendor/ie10/ie10-viewport-bug-workaround.js"></script>
-	<script src="dist/scripts/scripts.js"></script>
+
+	<!-- ============ ReactJS stuff ============ -->
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js" crossorigin="anonymous"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin="anonymous"></script>
+	<!--
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin="anonymous"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+	-->
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	<script src="src/scripts/scripts.js"></script>
+	<script type='text/babel' src="src/scripts/components.js"></script>
+
 </body>	
 </html>
