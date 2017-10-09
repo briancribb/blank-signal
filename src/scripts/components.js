@@ -97,6 +97,15 @@ class DynaButton extends React.Component {
 		//}
 	}
 
+	/*
+	Showing a download icon while the assets load, and then a round arrow spinner while the data loads. When the "loading" 
+	class is removed, the initial loader container is hidden and the Timeline app container is shown. 
+	*/
+	componentDidMount() {
+		$('html').removeClass('loading');
+	}
+
+
 	render() {
 		let markup = null;
 		markup = 

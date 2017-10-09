@@ -16,3 +16,24 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
+/* Loading Spinner */
+.page-load {
+	display:none;
+}
+html.loading {
+	height:100%;
+	body {
+		height:100%;
+	}
+	.app-wrap {
+		display:none;
+	}
+	.page-load {
+		display:block;
+	}
+	.main-footer {
+		overflow: hidden;
+	}
+}

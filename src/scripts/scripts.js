@@ -33,7 +33,6 @@
 				})()
 			};
 
-
 			APP.addResizeTask({
 				func: function() {
 

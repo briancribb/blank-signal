@@ -5736,6 +5736,21 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+/* Loading Spinner */
+.page-load {
+  display: none; }
+
+html.loading {
+  height: 100%; }
+  html.loading body {
+    height: 100%; }
+  html.loading .app-wrap {
+    display: none; }
+  html.loading .page-load {
+    display: block; }
+  html.loading .main-footer {
+    overflow: hidden; }
+
 html {
   font-size: 14px; }
 
@@ -5751,6 +5766,9 @@ html {
   html {
     font-size: 28px; } }
 
+body {
+  padding-bottom: 5rem; }
+
 .site-container {
   position: relative; }
 
@@ -5759,7 +5777,7 @@ html {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: auto;
+  height: 5rem;
   background-color: #acaaca; }
 
 .main-footer-content {
