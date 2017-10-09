@@ -2,7 +2,7 @@
 	{
 		"name": "Major Frosty",
 		"title": "Immune to Brain Freeze",
-		"desc": "REPLACEME",
+		"desc": "For this Texan veteran, every day is February in New England",
 		"arrFeatures": [
 			{
 				"name":"Ice",
@@ -24,7 +24,7 @@
 	{
 		"name": "Hot Tomale",
 		"title": "A Fire Engine Guy",
-		"desc": "REPLACEME",
+		"desc": "A former firefighter who's made the switch to starting fires while fighting crime on the side.",
 		"arrFeatures": [
 			{
 				"name":"Fire",
