@@ -1,0 +1,83 @@
+[
+	{
+		"name": "Major Frosty",
+		"title": "Immune to Brain Freeze",
+		"desc": "REPLACEME",
+		"arrFeatures": [
+			{
+				"name":"Ice",
+				"icon":"",
+				"tags":[ "influence" ]
+			},
+			{
+				"name":"Sliding",
+				"icon":"",
+				"tags":[ "travel" ]
+			},
+			{
+				"name":"Durability",
+				"icon":"",
+				"tags":[ "personal" ]
+			}
+		]
+	},
+	{
+		"name": "Hot Tomale",
+		"title": "A Fire Engine Guy",
+		"desc": "REPLACEME",
+		"arrFeatures": [
+			{
+				"name":"Fire",
+				"icon":"",
+				"tags":[ "influence" ]
+			},
+			{
+				"name":"Strength",
+				"icon":"",
+				"tags":[ "personal" ]
+			},
+			{
+				"name":"Durability",
+				"icon":"",
+				"tags":[ "personal" ]
+			}
+		]
+	},
+	{
+		"name": "Think Man",
+		"title": "Detective to the Stars",
+		"desc": "The Brainful Bird Dog of University City is destined to solve any and all crimes according to their relationship with the heavens.",
+		"arrFeatures": [
+			{
+				"name":"Detective",
+				"icon":"",
+				"tags":[ "skill" ]
+			},
+			{
+				"name":"Astrology",
+				"icon":"",
+				"tags": [ "skill", "pseudoscience" ]
+			},
+			{
+				"name":"Marketing",
+				"icon":"",
+				"tags":[ "skill" ]
+			},
+			{
+				"name":"Accounting",
+				"icon":"",
+				"tags":[ "skill" ]
+			},
+			{
+				"name":"Trivia",
+				"icon":"",
+				"tags":[ "skill" ]
+			},
+			{
+				"name":"Thinkmobile",
+				"icon":"",
+				"tags": [ "travel", "vehicle" ]
+			}
+		]
+	}
+]
