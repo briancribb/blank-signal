@@ -3,49 +3,86 @@ class DynaButton extends React.Component {
 		//console.log('constructor()');
 		super(); // Gotta call this first when doing a constructor.
 
-		var powers = {
-				personal: [
-					{ name: "Durability",	mod: 1 },
-					{ name: "Strength",		mod: 1 }
-				],
-				travel: [
-					{ name: "Flight",		mod: .8 },
-					{ name: "Sliding",		mod: 1.2 }
-				],
-				effect:[
-					{ name: "Fire",			mod: 2 },
-					{ name: "Ice",			mod: 1.2 }
-				]
-			};
-
 		var heroes = [
 			{
 				name:'Major Frosty',
 				title:'Immune to Brain Freeze',
 				desc:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.',
-				cost: 57,
-				powers: []
-				props : []
+				arrFeatures:[
+					{
+						name: "Ice",
+						icon: "",
+						tags: [ "influence" ]
+					},
+					{
+						name: "Sliding",
+						icon: "",
+						tags: [ "travel" ]
+					},
+					{
+						name: "Durability",
+						icon: "",
+						tags: [ "personal" ]
+					}
+				]
 			},
 			{
 				name:'Hot Tomale',
 				title:'A Fire Engine Guy',
 				desc:'Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.',
-				cost: 57,
-				powers: []
+				arrFeatures:[
+					{
+						name: "Fire",
+						icon: "",
+						tags: [ "influence" ]
+					},
+					{
+						name: "Strength",
+						icon: "",
+						tags: [ "personal" ]
+					},
+					{
+						name: "Durability",
+						icon: "",
+						tags: [ "personal" ]
+					}
+				]
 			},
 			{
 				name:'Think Man',
 				title:'Detective to the Stars',
 				desc:'The Brainful Bird Dog of University City is destined to solve any and all crimes according to their relationship with the heavens.',
-				cost: 57,
-				powers: []
-				props : [
-					[ 'Detective',4 ],
-					[ 'Astrology',6 ],
-					[ 'Marketing',2 ],
-					[ 'Accounting',3 ],
-					[ 'Trivia',7 ]
+				arrFeatures:[
+					{
+						name: "Detective",
+						icon: "",
+						tags: [ "skill" ]
+					},
+					{
+						name: "Astrology",
+						icon: "",
+						tags: [ "skill", "pseudoscience" ]
+					},
+					{
+						name: "Marketing",
+						icon: "",
+						tags: [ "skill" ]
+					},
+					{
+						name: "Accounting",
+						icon: "",
+						tags: [ "skill" ]
+					},
+					{
+						name: "Trivia",
+						icon: "",
+						tags: [ "skill" ]
+					},
+					{
+						name: "Thinkmobile",
+						icon: "",
+						tags: [ "travel", "vehicle" ]
+					}
 				]
 			}
 		];
