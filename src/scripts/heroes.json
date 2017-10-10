@@ -5,14 +5,14 @@
 		"desc": "For this Texan veteran, every day is February in New England",
 		"arrFeatures": [
 			{
-				"name":"Ice",
+				"name":"Ice Blast",
 				"icon":"",
-				"tags":[ "influence" ]
+				"tags":[ "effect", "cold" ]
 			},
 			{
-				"name":"Sliding",
+				"name":"Ice Slide",
 				"icon":"",
-				"tags":[ "travel" ]
+				"tags":[ "travel", "cold" ]
 			},
 			{
 				"name":"Durability",
@@ -27,9 +27,9 @@
 		"desc": "A former firefighter who's made the switch to starting fires while fighting crime on the side.",
 		"arrFeatures": [
 			{
-				"name":"Fire",
+				"name":"Fireball",
 				"icon":"",
-				"tags":[ "influence" ]
+				"tags":[ "effect", "heat" ]
 			},
 			{
 				"name":"Strength",
@@ -40,6 +40,121 @@
 				"name":"Durability",
 				"icon":"",
 				"tags":[ "personal" ]
+			}
+		]
+	},
+	{
+		"name": "Goofball",
+		"title": "Commissioner of Comedy",
+		"desc": "It's nevery too late for a good joke. Or a bad one.",
+		"arrFeatures": [
+			{
+				"name":"Confetti Cannon",
+				"icon":"",
+				"tags":[ "weapon", "comedy", "blinding" ]
+			},
+			{
+				"name":"Pogo Stick",
+				"icon":"",
+				"tags":[ "travel", "vehicle", "portable" ]
+			}
+		]
+	},
+	{
+		"name": "Captain Hops",
+		"title": "Jumper of Conclusions",
+		"desc": "She leaps into action to protect microbreweries.",
+		"arrFeatures": [
+			{
+				"name":"Jumping",
+				"icon":"",
+				"tags":[ "Travel" ]
+			},
+			{
+				"name":"Mega Boots",
+				"icon":"",
+				"tags":[ "blunt", "weapon" ]
+			}
+		]
+	},
+	{
+		"name": "Micky Mental",
+		"title": "Thought Equals Action",
+		"desc": "He doesn't think you'll commit that crime, so you won't.",
+		"arrFeatures": [
+			{
+				"name":"Read Minds",
+				"icon":"",
+				"tags":[ "perception", "communication", "telepathy" ]
+			},
+			{
+				"name":"Mind Control",
+				"icon":"",
+				"tags":[ "influence", "telepathy" ]
+			},
+			{
+				"name":"Brain Zap",
+				"icon":"",
+				"tags":[ "effect", "stun", "telepathy" ]
+			}
+		]
+	},
+	{
+		"name": "Lookie Lou",
+		"title": "He Sees You Too",
+		"desc": "An opthamological accident left a local bird watcher the power to see everything.",
+		"arrFeatures": [
+			{
+				"name":"Telescope Eyes",
+				"icon":"",
+				"tags":[ "personal", "perception" ]
+			},
+			{
+				"name":"See-through Vision",
+				"icon":"",
+				"tags":[ "personal", "perception" ]
+			},
+			{
+				"name":"Night Vision",
+				"icon":"",
+				"tags":[ "personal", "perception" ]
+			},
+			{
+				"name":"Laser Eyes",
+				"icon":"",
+				"tags":[ "effect", "heat", "laser" ]
+			}
+		]
+	},
+	{
+		"name": "Dancing Queen Liz",
+		"title": "She's over 17",
+		"desc": "The ruling monarch of Swishland uses her skills to combat evil.",
+		"arrFeatures": [
+			{
+				"name":"Dancing",
+				"icon":"",
+				"tags":[ "combat", "travel" ]
+			},
+			{
+				"name":"Singing",
+				"icon":"",
+				"tags":[ "influence", "sonic" ]
+			},
+			{
+				"name":"Crown",
+				"icon":"",
+				"tags":[ "weapon", "edged", "throwing" ]
+			},
+			{
+				"name":"Boom Box",
+				"icon":"",
+				"tags":[ "influence", "sonic", "weapon" ]
+			},
+			{
+				"name":"Roller Skates",
+				"icon":"",
+				"tags":[ "travel", "vehicle", "portable" ]
 			}
 		]
 	},
@@ -61,12 +176,12 @@
 			{
 				"name":"Marketing",
 				"icon":"",
-				"tags":[ "skill" ]
+				"tags":[ "skill", "business" ]
 			},
 			{
 				"name":"Accounting",
 				"icon":"",
-				"tags":[ "skill" ]
+				"tags":[ "skill" , "business" ]
 			},
 			{
 				"name":"Trivia",
