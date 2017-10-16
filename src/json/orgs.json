@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Gumshoe Association",
+		"desc": "A team of detectives who colaboratively solve crimes.",
+		"arrMembers": [
+			{
+				"name":"Think Man"
+			},
+			{
+				"name":"Lookie Lou"
+			},
+			{
+				"name":"Captain Hops"
+			}
+		]
+	}
+]

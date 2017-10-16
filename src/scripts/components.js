@@ -35,7 +35,8 @@ class DynaButton extends React.Component {
 		var that = this,
 			dfd_array = [],
 			dfd_sources = [
-				{ id : 'heroes', path : 'src/json/heroes.json' }
+				{ id : 'heroes', path : 'src/json/heroes.json' },
+				{ id : 'organizations', path : 'src/json/orgs.json' }
 			],
 			objData = {
 				initialized: false
@@ -90,20 +91,25 @@ class DynaButton extends React.Component {
 			//that._addListeners();
 		});
 
-
-
-
-
-
-
-
-
-
-
 		that.setState(objData);
 	}// End of _getData()
 
 
+	/*
+	Returns an array of JSX React components to be used as timeline entries. Since this function is a top-level 
+	method of the Timeline component, it has access to the component state.
+
+	The "key" prop is required by React for iterators. It can be anything, but must be unique for each entry. 
+	In this case, we're just counting up.
+	*/
+ 	_getEntries() {
+		let key = 0;
+		return this.state.heroes.map((entry) => {
+			let markup = <HeroEntry obj={entry} key={key} />;
+			key ++;
+			return(markup);
+		});
+	}
 
 
 
@@ -113,34 +119,10 @@ class DynaButton extends React.Component {
 		let markup = null;
 
 		if (this.state.initialized) {
+			const entries = this._getEntries();
 			markup = 
 				<div id="heroes">
-					<div className="card border-danger mb-3">
-						<h4 className="card-header bg-danger"><i className="fa fa-superpowers mr-3" aria-hidden="true"></i>Some Hero</h4>
-						<div className="card-body">
-							<h4 className="card-title">Special title treatment</h4>
-							<p className="card-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-						<ul className="list-group text-white">
-							<li className="list-group-item bg-dark">Cost<div className="pull-right"><span className="badge badge-success">57</span></div></li>
-							<li className="list-group-item bg-secondary">Ice<div className="pull-right"><span className="badge badge-primary">5</span></div></li>
-							<li className="list-group-item bg-dark">Travel: Sliding<div className="pull-right"><span className="badge badge-primary">5</span></div></li>
-							<li className="list-group-item bg-secondary">Durability<div className="pull-right"><span className="badge badge-dark">5</span></div></li>
-						</ul>
-						</div>
-					</div>
-					<div className="card border-info mb-3">	
-						<h4 className="card-header bg-info"><i className="fa fa-superpowers mr-3" aria-hidden="true"></i>Some Hero</h4>
-						<div className="card-body">
-							<h4 className="card-title">Special title treatment</h4>
-							<p className="card-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-						<ul className="list-group text-white">
-							<li className="list-group-item bg-dark">Cost<div className="pull-right"><span className="badge badge-success">57</span></div></li>
-							<li className="list-group-item bg-secondary">Fire<div className="pull-right"><span className="badge badge-danger">5</span></div></li>
-							<li className="list-group-item bg-dark">Strength<div className="pull-right"><span className="badge badge-primary">3</span></div></li>
-							<li className="list-group-item bg-secondary">Durability<div className="pull-right"><span className="badge badge-dark">2</span></div></li>
-						</ul>
-						</div>
-					</div>
+					{entries}
 				</div>
 			;
 		} else {
@@ -154,14 +136,42 @@ class DynaButton extends React.Component {
 		return(
 			markup
 		); 
-
-
-		return(
-			markup
-		); 
 	}
 }
 
+/*
+An individual timeline entry.
+*/
+class HeroEntry extends React.Component {
+
+ 	_getFeatures() {
+ 		let isDark = true;
+		return this.props.obj.arrFeatures.map((feature, i) => {
+			let shade = (isDark) ? "dark" : "secondary";
+			let markup = <li className={"list-group-item bg-"+shade} key={i}>{feature.name}</li>;
+			isDark = !isDark;
+			return(markup);
+		});
+	}
+
+	render() {
+		let hero = this.props.obj;
+		const features = this._getFeatures();
+
+		return(
+			<div className="card border-info mb-3">	
+				<h4 className="card-header bg-info"><i className="fa {hero.icon} mr-3" aria-hidden="true"></i>{hero.name}</h4>
+				<div className="card-body">
+					<h4 className="card-title">{hero.title}</h4>
+					<p className="card-text">{hero.desc}</p>
+				<ul className="list-group text-white">
+					{features}
+				</ul>
+				</div>
+			</div>
+		);
+	}
+}
 
 ReactDOM.render(
 	<DynaButton />, document.getElementById('blank-signal')

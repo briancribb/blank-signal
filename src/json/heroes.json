@@ -74,6 +74,11 @@
 				"name":"Mega Boots",
 				"icon":"",
 				"tags":[ "blunt", "weapon" ]
+			},
+			{
+				"name":"Detective",
+				"icon":"",
+				"tags":[ "skill" ]
 			}
 		]
 	},
@@ -123,6 +128,11 @@
 				"name":"Laser Eyes",
 				"icon":"",
 				"tags":[ "effect", "heat", "laser" ]
+			},
+			{
+				"name":"Detective",
+				"icon":"",
+				"tags":[ "skill" ]
 			}
 		]
 	},
