@@ -1,6 +1,12 @@
 class DynaButton extends React.Component {
 	constructor() {
 		//console.log('constructor()');
+
+		// Terminal commands at work
+		// cd /Users/bcribb/Experiments/github
+		// gulp default --option blank-signal
+
+
 		super(); // Gotta call this first when doing a constructor.
 
 		this.state = {
@@ -103,10 +109,8 @@ class DynaButton extends React.Component {
 	In this case, we're just counting up.
 	*/
  	_getEntries() {
-		let key = 0;
-		return this.state.heroes.map((entry) => {
-			let markup = <HeroEntry obj={entry} key={key} />;
-			key ++;
+		return this.state.heroes.map((entry, i) => {
+			let markup = <HeroEntry obj={entry} key={i} />;
 			return(markup);
 		});
 	}
@@ -154,13 +158,35 @@ class HeroEntry extends React.Component {
 		});
 	}
 
+	_getFrameColor() {
+
+		var colorType = "warning";
+
+		for (var i = this.props.obj.arrFeatures.length - 1; i >= 0; i--) {
+			let tags = this.props.obj.arrFeatures[i].tags;
+
+			if (
+				_.find( tags , function(tag){ return tag === "heat"; })
+				) {
+				colorType = "danger";
+
+			} else if(
+				_.find( tags , function(tag){ return tag === "cold"; })
+				) {
+				colorType = "info";
+			}
+		}
+		return colorType;
+	}
+
 	render() {
 		let hero = this.props.obj;
 		const features = this._getFeatures();
+		const frameType = this._getFrameColor();
 
 		return(
-			<div className="card border-info mb-3">	
-				<h4 className="card-header bg-info"><i className="fa {hero.icon} mr-3" aria-hidden="true"></i>{hero.name}</h4>
+			<div className={"card border-" + frameType + " mb-3"}>	
+				<h4 className={"card-header bg-" + frameType}><i className="fa {hero.icon} mr-3" aria-hidden="true"></i>{hero.name}</h4>
 				<div className="card-body">
 					<h4 className="card-title">{hero.title}</h4>
 					<p className="card-text">{hero.desc}</p>
