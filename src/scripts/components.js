@@ -1,4 +1,4 @@
-class DynaButton extends React.Component {
+class BlankSignal extends React.Component {
 	constructor() {
 		//console.log('constructor()');
 
@@ -200,5 +200,5 @@ class HeroEntry extends React.Component {
 }
 
 ReactDOM.render(
-	<DynaButton />, document.getElementById('blank-signal')
+	<BlankSignal />, document.getElementById('blank-signal')
 );
